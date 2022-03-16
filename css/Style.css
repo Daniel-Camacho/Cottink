@@ -1,108 +1,7 @@
 *{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+    background-color: #F2F2F2;
 }
 
-nav{
-    background: #F2F2F2;
-    height: 80px;
-    width: 100%;
-}
-
-
-.logo{
-    height: 40px;
-    position: absolute;
-    padding: 20px 50px;
-}
-
-nav ul{
-    float: left;
-    margin-left: 250px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-nav ul li a{
-    transition: 0;
-    background: #F2F2F2;
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 20px 0;
-    margin: 0 20px;
-}
-li a.genero, li a:hover{
-    border-bottom: 4px solid #BF3E67;
-    padding: 6px 0; 
-}
-.Opc_user{
-    float: right;
-    margin-right: 20px;
-}
-
-svg{
-    width: 35px;
-    height: 16px;
-}
-
-.checkbtn{
-    font-size: 30px;
-    color: black;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
-
-@media (max-width: 952px){
-    .logo{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    li a:hover, li a.active{
-        background: none;
-        color: #F2F2F2;
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-}
 
 .img1{
     width: 100%;
@@ -112,9 +11,39 @@ svg{
 .img2{
     width: 100%;
     height: auto;
+    margin-top: 25px;
 }
 
 .img3{
     width: 100%;
     height: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+}
+
+.contenedor{
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    justify-content: space-around;
+    margin-top: 25px;
+
+}
+
+
+
+.separador{
+    width: 100%;
+    padding: 3px;
+    left: 0;
+    margin-bottom: 1px;
+    background: #E3E3E3;
+    margin-top: 25px;
+}
+
+.footer-ul-container{
+    background: #F0F0F0;
+    margin-bottom: 0;
+    margin-top: 0;
 }

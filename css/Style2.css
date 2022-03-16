@@ -1,0 +1,17 @@
+*{
+    background-color: white;
+}
+
+.producto__img{
+    border-left:2px black;
+}
+
+.productDescription{
+    border-bottom:2px black;
+}
+
+.producto{
+    margin: 50px;
+    display: inline-block;
+    position: relative;
+}

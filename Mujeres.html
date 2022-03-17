@@ -24,8 +24,8 @@
             </a>
         
             <ul class="genero">
-              <li><a href="Mujeres.html" class="">Hombre</a></li>
-              <li><a href="#" class="">Mujer</a></li>
+              <li><a href="#" class="">Hombre</a></li>
+              <li><a href="Mujeres.html" class="">Mujer</a></li>
             </ul>
         
             <form class="buscador">
@@ -61,34 +61,84 @@
     <!--Cuerpo-->
         <!--indice-->
         <!--Titulo-->
-        <h2>Mujer</h2>
-        <!--Submenu-->
-        <!--Vista y orden-->
+        <h2 class="mujer">Mujer</h2>
+        <div class="sidenav">
+          <!--Submenu-->
+        <button type="button" class="collapsible">Categoria</button>
+        <div class="content">
+          <ul class="category">
+            <li><a href="#" class="footer-link">Mercadologo</a></li>
+            <li><a href="#" class="footer-link">Programador</a></li>
+            <li><a href="#" class="footer-link">Ingeniero ambiental</a></li>
+            <li><a href="#" class="footer-link">Médico</a></li>
+            <li><a href="#" class="footer-link">Diseñadores</a></li>
+            <li><a href="#" class="footer-link">Maestros</a></li>
+          </ul>
+        </div>
+        <button type="button" class="collapsible">Color</button>
+        <div class="content">
+          <input class="radio1" id="option-one" name="radio1" value="#" checked="checked" type="radio">
+          <input class="radio2" id="option-one" name="radio2" value="#" checked="checked" type="radio">
+          <input class="radio3" id="option-one" name="radio3" value="#" checked="checked" type="radio">
+          <input class="radio4" id="option-one" name="radio4" value="#" checked="checked" type="radio">
+          <input class="radio5" id="option-one" name="radio5" value="#" checked="checked" type="radio">
+          <input class="radio6" id="option-one" name="radio6" value="#" checked="checked" type="radio">
+        </div>
+        <button type="button" class="collapsible">Tallas</button>
+        <div class="content">
+          <a class="talla" href="#" role="button">CH</a>
+          <a class="talla" href="#" role="button">M</a>
+          <a class="talla" href="#" role="button">G</a>
+        </div>
+        
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+          
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+          </script>
+        </div>
+        
+        <div class="content1">
+          <!--Vista y orden-->
         <!--Productos-->
         <div class="pro">
-        <div class="producto">
-            <img src="Img/8-2-1.png" alt="" class="producto__img">
-            <div class="productDescription">
-                <spam class="produto__title">Dinosaurio internet</spam>
-                <h3 class="produto__price">$329.99</h3>
-            </div>
+          <div class="producto">
+              <img src="Img/8-2-1.png" alt="" class="producto__img">
+              <div class="productDescription">
+                  <spam class="produto__title">Dinosaurio internet</spam>
+                  <h3 class="produto__price">$329.99</h3>
+              </div>
+          </div>
+          <div class="producto">
+              <img src="Img/6-1-1.png" alt="" class="producto__img">
+              <div class="productDescription">
+                  <spam class="produto__title">Dinosaurio internet</spam>
+                  <h3 class="produto__price">$329.99</h3>
+              </div>
+          </div>
+          <div class="producto">
+              <img src="Img/10-1-1.png" alt="" class="producto__img">
+              <div class="productDescription">
+                  <spam class="produto__title">Dinosaurio internet</spam>
+                  <h3 class="produto__price">$329.99</h3>
+              </div>
+          </div>
+      </div>
         </div>
-        <div class="producto">
-            <img src="Img/6-1-1.png" alt="" class="producto__img">
-            <div class="productDescription">
-                <spam class="produto__title">Dinosaurio internet</spam>
-                <h3 class="produto__price">$329.99</h3>
-            </div>
-        </div>
-        <div class="producto">
-            <img src="Img/10-1-1.png" alt="" class="producto__img">
-            <div class="productDescription">
-                <spam class="produto__title">Dinosaurio internet</spam>
-                <h3 class="produto__price">$329.99</h3>
-            </div>
-        </div>
-    </div>
+      
     <!--Copyright-->
     <p class="footer-credit">Copyright © 2020- | COTTINK | Playeras profesionales| Todos los derechos reservados.</p>
+
 </body>
 </html>

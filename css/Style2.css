@@ -16,17 +16,29 @@
   overflow-x: hidden;
 }
 .content1 {
-  margin-top: 200px;
+  margin-top: 0px;
   margin-left: 300px;
-  padding-left: 20px;
+  margin-right: 0;
 }
 
+
 .producto{
-    margin-left: 5%;
+    margin-left: 50px;
     margin-top: 0;
     display: inline-block;
     position: relative;
     margin-bottom: 50px;
+    border-style: ridge;
+}
+
+.productDescription{
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.produto__price{
+  margin-top: 5px;
 }
 
 .collapsible {

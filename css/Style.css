@@ -21,28 +21,24 @@
 
 }
 
+.publi1{
+    margin-left: 100px;
+}
+
 .contenedor{
     margin: auto;
     display: inline-block;
     position: relative;
     justify-content: space-around;
     margin-top: 25px;
-
+    padding-left: 10%;
 }
 
-
-
-.separador{
-    width: 100%;
-    padding: 3px;
-    left: 0;
-    margin-bottom: 1px;
-    background: #E3E3E3;
-    margin-top: 25px;
-}
 
 .footer-ul-container{
     background: #F0F0F0;
     margin-bottom: 0;
     margin-top: 0;
 }
+
+
